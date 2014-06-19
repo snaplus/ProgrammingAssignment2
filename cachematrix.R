@@ -49,6 +49,7 @@ cacheSolve <- function(x, ...) {
         print("Getting inverse matrix from cache")
         return(inverse)
     }
+    
     print("Calculating inverse matrix")
     data <- x$get()
     inverse <- solve(data, ...)
